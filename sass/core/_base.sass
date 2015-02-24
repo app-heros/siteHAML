@@ -1,0 +1,40 @@
+// *************************************
+//
+//   Base
+//   -> Base-level tags (body, p, etc.)
+//
+// *************************************
+
+html
+	font-size: $base-fontSize
+	height: 100%
+
+body
+	color: $base-color
+	font-family: $base-fontFamily
+	font-size: 100%
+	line-height: $base-lineHeight
+	min-height: 100%	
+	position: relative
+
+section
+	position: relative
+	padding: 20px
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+p
+	font-size: rem($base-fontSize)
+
+// -------------------------------------
+//   Inline Content
+// -------------------------------------
+
+a
+	color: $base-link-color
+	text-decoration: none
+	&:hover,
+	&:focus
+		text-decoration: underline

@@ -1,0 +1,6 @@
+.idea
+.sass-cache
+.coffeescript-cache
+fire_app_log.txt
+build_*
+/nbproject/private/

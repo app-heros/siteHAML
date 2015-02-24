@@ -1,0 +1,200 @@
+// *************************************
+//
+//   Header
+//   -> Haut de page
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// $module-variable
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.header		
+	background-image: url($chemin +'header/header.jpg')
+	background-position: 50% 50%
+	position: relative
+	background-size: cover
+	width: 100%
+	display: block
+	&:before 
+		content: ""
+		display: block
+		position: relative
+		top: 0px
+		left: 0px
+		width: 100%
+		height: 300px
+		background-image: url($chemin +'header/masqueapp.png')
+		background-position: center bottom
+		background-size: cover
+		opacity: 0.5
+	&:after 
+		content: ""
+		display: block
+		position: absolute
+		left: 50%
+		top: 200px
+		opacity: 0.6
+		margin-left: -75px
+		width: 150px
+		height: 100px
+		background-image: url($chemin+'header/app-heros-logos-AH-sombre.png')
+		background-position: center bottom
+		background-size: 100% 100%
+	h1
+		font-weight: 400
+		text-align: center
+		color: #414141
+		font-family: 'Anton', sans-serif
+		font-size: rem(35px)
+	.paragraphs
+		position: absolute
+		bottom: 150px
+		width: 100%
+		height: 350px
+		&:after
+			content: ""
+			display: block
+			clear: both
+		.paragraph
+			float: left
+			width: 33.33%
+			height: 100%
+			padding: 30px 2%
+			position: relative
+			&:first-child
+				width: 29.33%
+				-webkit-animation: color1 5s infinite ease
+				-moz-animation: color1 5s infinite ease
+				-o-animation: color1 5s infinite ease
+				animation: color1 5s infinite ease
+			h2
+				text-transform: uppercase
+				margin-bottom: 20px
+				color: #ffffff
+				font-size: 2em
+				text-align: center
+				vertical-align: middle
+				font-family: 'Josefin Sans', sans-serif
+				font-weight: 400
+				margin: 20px
+				height: auto
+			p
+				padding: 10px
+				text-align: justify
+				font-family: Open Sans, sans-serif
+				font-weight: 400
+				font-size: 0.9em
+				line-height: 20px
+				color: #ffffff
+		.title
+			padding: 0
+			h2
+				-webkit-animation: color2 4s infinite ease
+				-moz-animation: color2 4s infinite ease
+				-o-animation: color2 4s infinite ease
+				animation: color2 4s infinite ease
+				display: block
+				line-height: 94px
+				height: 50%
+				position: relative
+				margin: 0
+				strong
+					display: block
+			p
+				-webkit-animation: color3 6s infinite ease
+				-moz-animation: color3 6s infinite ease
+				-o-animation: color3 6s infinite ease
+				animation: color3 6s infinite ease
+				height: 40%
+				color: #ffffff
+				text-align: justify
+				padding: 5% 40px
+				margin: 0
+		.links
+			padding: 0
+			&:after
+				content: ""
+				display: block
+				clear: both
+			.link
+				display: block
+				float: left
+				height: 175px
+				line-height: 175px
+				text-align: center
+				width: 33.33%
+				transition: .3s ease
+				&:nth-child(1) 
+					background-color: rgba(0,168,255,0.1)
+				&:nth-child(2)
+					background-color: rgba(252,59,105,0.1)
+				&:nth-child(3)
+					background-color: rgba(72,197,90,0.1)
+				&:nth-child(4) 
+					background-color: rgba(249,175,45,0.1)
+				&:nth-child(5) 
+					background-color: rgba(79,208,197,0.1)
+				a
+					text-decoration: none
+					vertical-align: middle
+					display: inline-block
+					line-height: normal
+					text-align: center
+					border: none
+					padding: 10px 10px
+					color: #ffffff
+			.link.big
+				width: 66.666%
+	.enter_bottom
+		width: 100%
+		height: 150px
+		background: #ffffff
+		line-height: 150px
+		text-align: center
+		position: absolute
+		bottom: 0px
+		&:before 
+			content: ""
+			display: block
+			position: absolute
+			bottom: 0px
+			left: 0px
+			width: 100%
+			height: 21px
+			opacity: 0.3
+			background-image: url($chemin+'header/masqueligneapp.png')
+			background-repeat: repeat-x
+		h2
+			color: #414141
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .module--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .is-module-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-module
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+// ----- Submodule ----- //
+
+// .module-submodule

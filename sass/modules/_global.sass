@@ -1,0 +1,197 @@
+// *************************************
+//
+//   global
+//   -> balise générales
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// $module-variable
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+@import url(http://fonts.googleapis.com/css?family=Dosis:300,400,600,700)
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,300,600,700)
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic)
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower)
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700,300italic,400italic,600italic,700italic)
+@import "compass/support"
+
+
+@mixin keyframes($name, $deprecated-prefixes...) 
+	$warned: warn-about-useless-prefix-arguments($deprecated-prefixes...)
+	@include with-each-prefix(css-animation, $animation-support-threshold) 
+		@if $current-prefix == -moz 
+			@-moz-keyframes #{$name} 
+				@content
+		@if $current-prefix == -webkit 
+			@-webkit-keyframes #{$name} 
+				@content
+		@if $current-prefix == -o 
+			@-o-keyframes #{$name} 
+				@content;
+		@if $current-prefix == -ms 
+			@-ms-keyframes #{$name} 
+				@content
+		@if $current-prefix == null 
+			@keyframes #{$name} 
+				@content
+
++keyframes(color1)
+	0%
+		background-color: rgba(93,214,150,0.1)
+	25%
+		background-color: rgba(93,214,150,0.1)
+	50%   
+		background-color: rgba(93,214,150,0.3)
+	75%   
+		background-color: rgba(93,214,150,0.1)
+	100%   
+		background-color: rgba(93,214,150,0.1)
+
+
+@-webkit-keyframes color2 
+	0%     
+		background-color: rgba(206,98,19,0.1) 
+	25%     
+		background-color: rgba(206,98,19,0.1) 
+	50%   
+		background-color: rgba(206,98,19,0.3) 
+	75%     
+		background-color: rgba(206,98,19,0.1) 
+	100%   
+		background-color: rgba(206,98,19,0.1) 
+	
+@-moz-keyframes color2 
+	0%     
+		background-color: rgba(206,98,19,0.1) 
+	25%     
+		background-color: rgba(206,98,19,0.1) 
+	50%   
+		background-color: rgba(206,98,19,0.3)  
+	75%     
+		background-color: rgba(206,98,19,0.1) 
+	100%   
+		background-color: rgba(206,98,19,0.1) 
+	
+@-o-keyframes color2 
+	0%     
+		background-color: rgba(206,98,19,0.1) 
+	25%     
+		background-color: rgba(206,98,19,0.1) 
+	50%   
+		background-color: rgba(206,98,19,0.3) 
+	75%     
+		background-color: rgba(206,98,19,0.1) 
+	100%   
+		background-color: rgba(206,98,19,0.1) 
+	
+@keyframes color2 
+	0%     
+		background-color: rgba(206,98,19,0.1) 
+	25%     
+		background-color: rgba(206,98,19,0.1) 
+	50%   
+		background-color: rgba(206,98,19,0.3) 
+	75%     
+		background-color: rgba(206,98,19,0.1) 
+	100%   
+		background-color: rgba(206,98,19,0.1) 
+	
+
+@-webkit-keyframes color3 
+	0%     
+		background-color: rgba(166,59,162,0.1) 
+	25%     
+		background-color: rgba(166,59,162,0.1) 
+	50%   
+		background-color: rgba(166,59,162,0.3) 
+	75%     
+		background-color: rgba(166,59,162,0.1) 
+	100%   
+		background-color: rgba(166,59,162,0.1) 
+	
+@-moz-keyframes color3 
+	0%     
+		background-color: rgba(166,59,162,0.1) 
+	25%     
+		background-color: rgba(166,59,162,0.1) 
+	50%   
+		background-color: rgba(166,59,162,0.3) 
+	75%     
+		background-color: rgba(166,59,162,0.1) 
+	100%   
+		background-color: rgba(166,59,162,0.1) 
+	
+@-o-keyframes color3 
+	0%   
+		background-color: rgba(166,59,162,0.1) 
+	25%   
+		background-color: rgba(166,59,162,0.1) 
+	50%   
+		background-color: rgba(166,59,162,0.3) 
+	75%   
+		background-color: rgba(166,59,162,0.1) 
+	100%   
+		background-color: rgba(166,59,162,0.1) 
+
+@keyframes color3 
+	0%   
+		background-color: rgba(166,59,162,0.1) 
+	25%   
+		background-color: rgba(166,59,162,0.1) 
+	50%   
+		background-color: rgba(166,59,162,0.3) 
+	75%   
+		background-color: rgba(166,59,162,0.1) 
+	100%   
+		background-color: rgba(166,59,162,0.1) 
+
+
+h2 
+	font-family: 'Josefin Sans', sans-serif
+	font-weight: 400
+	font-size: 2.5em
+	margin: 20px
+	height: auto
+	
+p,
+a, 
+span, 
+label, 
+input 
+	font-family: 'Open Sans', sans-serif
+	font-weight: 400
+	font-size: 1.1em
+	color: #ffffff
+
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .module--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .is-module-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-module
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+// ----- Submodule ----- //
+
+// .module-submodule
