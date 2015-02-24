@@ -1,6 +1,4 @@
-# Appolo Front-end Bootstrap
-
-Pour bien commencer ses projets d'intégration.
+# Base integration
 
 ## Composants & Inspiration :
 - Sass : http://sass-lang.com
